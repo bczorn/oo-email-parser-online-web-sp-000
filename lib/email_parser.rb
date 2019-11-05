@@ -15,7 +15,7 @@ class EmailAddressParser
   def parse
       x = @email.split(/[, | ]/)
       @@all << x
-      @@all
+      @@all.delete("")
   end
   
 end
