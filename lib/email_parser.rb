@@ -16,7 +16,7 @@ class EmailAddressParser
       x = @email.split(/[, | ]/)
       @@all << x
       @@all.flatten.uniq
-      
+      @@all.drop_while
   end
   
 end
