@@ -13,20 +13,9 @@ class EmailAddressParser
   end
   
   def parse
-    if (@email.include?(", ")) && (@email.include?(" ")) == true
       x = @email.split("/[, | ]/")
       @@all << x
       @@all.flatten
-    elsif
-      @email.include?(", ") == true
-      x = @email.split(", ")
-      @@all << x
-      @@all.flatten
-    elsif
-      x = @email.split(" ")
-      @@all << x
-      @@all.flatten
-    end
     x = @@all.compact
     @@all.flatten.uniq
     
