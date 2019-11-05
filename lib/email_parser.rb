@@ -14,10 +14,8 @@ class EmailAddressParser
   
   def parse
       x = @email.split(/[, | ]/)
-    if x != ""
       @@all << x
-    end
-    @@all
+      @@all
   end
   
 end
