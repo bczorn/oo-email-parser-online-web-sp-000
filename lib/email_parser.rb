@@ -14,10 +14,11 @@ class EmailAddressParser
   
   def parse
       x = @email.split(/[, | ]/)
-      @@all << x
-      @@all = @@all.flatten.uniq
-      @@all.delete("")
-      @@all
+      @all = []
+      @all << x
+      @all = @@all.flatten.uniq
+      @all.delete("")
+      @all
   end
   
 end
